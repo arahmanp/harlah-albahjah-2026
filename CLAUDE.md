@@ -218,4 +218,4 @@ Tidak ada API key atau autentikasi — semua link publik.
 4. **Halaman kategori "Putri" belum ada** — saat ini baru ada `/putra/`. Halaman putri perlu dibuat dengan struktur yang sama.
 5. **Font Google dikomentari** — jika ingin mengaktifkan, uncomment di `css/global.css`.
 6. **README.md minimal** — file ini yang menjadi sumber kebenaran untuk struktur proyek.
-7. **Selalu buat checkpoint** — lakukan commit setiap kali membuat fitur/kode baru. pastikan buat commit message yang cukup deskriptif.
+7. **Selalu buat checkpoint** — lakukan commit setiap kali membuat fitur/kode baru. pastikan buat commit message yang cukup deskriptif dalam bahasa inggris.
