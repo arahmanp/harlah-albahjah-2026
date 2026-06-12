@@ -1,0 +1,14 @@
+/* ============================================================
+   PUTRA.CSS — Al-Bahjah Harlah 2026
+   Styles specific to the Putra page
+   ============================================================ */
+
+/* 3 cards layout — slightly smaller card size than competitions.html */
+.category-card {
+  aspect-ratio: 2/3;
+}
+
+/* Staggered fade-up delay for the 3 cards */
+.col-sm-8:nth-child(1) .fade-up { transition-delay: 0s; }
+.col-sm-8:nth-child(2) .fade-up { transition-delay: 0.1s; }
+.col-sm-8:nth-child(3) .fade-up { transition-delay: 0.2s; }

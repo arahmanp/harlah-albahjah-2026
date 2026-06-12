@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perlombaan — Harlah Al-Bahjah 2026</title>
+  <meta name="description" content="Informasi lengkap perlombaan Harlah Al-Bahjah 2026 — berbagai cabang lomba Islami untuk santri SD, SMP, dan SMA." />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="../lib/bootstrap5/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="../assets/img/icon/bootstrap-icons-1.13.1/bootstrap-icons.min.css" />
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="../css/global.css" />
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="../css/competitions.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       BACK BUTTON
+       ============================================================ -->
+  <a href="../index.html" class="back-btn">
+    <i class="bi bi-arrow-left"></i>
+    Kembali ke Beranda
+  </a>
+
+  <!-- ============================================================
+       SECTION 1 — PAGE TITLE
+       ============================================================ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="fade-up">
+        <p class="page-hero-label">
+          <i class="bi bi-trophy"></i>
+          Harlah Al-Bahjah 2026
+        </p>
+        <h1 class="page-hero-title">
+          Perlombaan<br />
+          <span>Al-Bahjah</span>
+        </h1>
+        <div class="page-hero-divider"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2 — DESCRIPTION
+       ============================================================ -->
+  <section class="desc-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 fade-up">
+
+          <p>
+            Harlah Al-Bahjah 2026 menghadirkan rangkaian perlombaan Islami yang dirancang khusus
+            untuk menggali dan mengembangkan potensi para santri di berbagai bidang keislaman.
+            Perlombaan ini merupakan salah satu agenda utama dalam perayaan Hari Lahir Pondok
+            Pesantren Al-Bahjah yang diselenggarakan setiap tahunnya.
+          </p>
+
+          <p>
+            Setiap cabang lomba yang dipertandingkan dipilih dengan cermat untuk mencerminkan
+            nilai-nilai Islam yang menjadi landasan pendidikan di Al-Bahjah — kecintaan terhadap
+            Al-Quran, penguasaan ilmu agama, serta kemampuan berekspresi dalam bingkai Islam.
+            Kompetisi ini bukan sekadar ajang mencari juara, melainkan juga momentum untuk
+            menumbuhkan semangat belajar dan rasa cinta terhadap ilmu pengetahuan Islam.
+          </p>
+
+          <p>
+            Perlombaan pada Harlah Al-Bahjah 2026 dibagi berdasarkan kategori gender dan jenjang
+            pendidikan, sehingga setiap peserta dapat berkompetisi secara adil dan setara sesuai
+            dengan tingkat kemampuannya masing-masing. Mulai dari jenjang SD IQU, SMP IQU, hingga
+            SMA IQU, semua memiliki kesempatan yang sama untuk bersinar dan meraih prestasi.
+          </p>
+
+          <p>
+            Seluruh peserta akan dinilai oleh dewan juri yang kompeten dan berpengalaman di
+            bidangnya. Proses penilaian dilakukan secara objektif dan transparan demi menjaga
+            integritas dan semangat sportivitas yang tinggi. Para pemenang akan mendapatkan
+            penghargaan dan hadiah menarik yang akan diserahkan pada malam puncak acara
+            Harlah Al-Bahjah 2026.
+          </p>
+
+          <div class="desc-highlight fade-up">
+            <i class="bi bi-info-circle-fill"></i>
+            <p>
+              Pendaftaran peserta lomba dibuka hingga <strong>20 Mei 2026</strong>. Hubungi koordinator
+              asrama atau wali kelas masing-masing untuk informasi pendaftaran lebih lanjut.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 3 — CATEGORY CARD
+       ============================================================ -->
+  <section class="category-section">
+    <div class="container">
+
+      <div class="section-header text-center mb-5 fade-up">
+        <span class="section-label">Kategori Perlombaan</span>
+        <h2 class="section-title">Pilih Kategori</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4 fade-up">
+          <a href="putra/putra.html" class="category-card-wrapper">
+            <div class="category-card">
+              <img src="../assets/img/temp-image.jpg" alt="Perlombaan Putra" />
+              <div class="category-card-overlay"></div>
+              <div class="category-card-arrow">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+            <p class="category-label">Putra</p>
+            <p class="category-sublabel">SD · SMP · SMA IQU</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <!-- jQuery -->
+  <script src="../lib/jquery/jquery-4.0.0.min.js"></script>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="../lib/bootstrap5/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Global fade-up script (inline, ringan) -->
+  <script>
+    $(function () {
+      // Theme init
+      const saved = localStorage.getItem('harlah-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      $('html').attr('data-theme', saved);
+
+      // Fade-up observer
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            $(entry.target).addClass('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.fade-up').forEach(function (el) {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* ============================================================
+   DIVISION.CSS — Al-Bahjah Harlah 2026
+   Shared styles for sdiqu, smpiqu, smaiqu pages
+   ============================================================ */
+
+/* ============================================================
+   COMPETITION CARD
+   ============================================================ */
+.comp-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.comp-card {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.comp-card-wrapper:hover .comp-card {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+
+.comp-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.comp-card-wrapper:hover .comp-card img {
+  transform: scale(1.06);
+}
+
+.comp-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 34, 24, 0.65) 0%,
+    transparent 55%
+  );
+  border-radius: var(--radius-xl);
+}
+
+/* Icon badge on card */
+.comp-card-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(245, 200, 66, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(245, 200, 66, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-yellow-300);
+  font-size: 1.1rem;
+}
+
+.comp-card-label {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0;
+}
+
+/* Action Buttons */
+.comp-card-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-registration {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: var(--clr-green-900);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 3px 12px rgba(245, 200, 66, 0.3);
+  white-space: nowrap;
+}
+
+.btn-registration:hover {
+  background: var(--clr-yellow-300);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 200, 66, 0.45);
+  color: var(--clr-green-900);
+}
+
+.btn-rulebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-rulebook:hover {
+  border-color: var(--clr-green-500);
+  color: var(--clr-green-500);
+  background: rgba(45, 122, 82, 0.07);
+}
+
+[data-theme="dark"] .btn-rulebook:hover {
+  border-color: var(--clr-yellow-300);
+  color: var(--clr-yellow-300);
+  background: rgba(245, 200, 66, 0.07);
+}
+
+/* ============================================================
+   COMPETITION SECTION GRID
+   ============================================================ */
+.comp-section {
+  padding: 80px 0 100px;
+  background: var(--bg-primary);
+}
+
+/* Staggered animation delays */
+.comp-col:nth-child(1) { animation-delay: 0s; }
+.comp-col:nth-child(2) { animation-delay: 0.08s; }
+.comp-col:nth-child(3) { animation-delay: 0.16s; }
+.comp-col:nth-child(4) { animation-delay: 0.24s; }
+.comp-col:nth-child(5) { animation-delay: 0.32s; }

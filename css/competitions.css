@@ -1,0 +1,261 @@
+/* ============================================================
+   COMPETITIONS.CSS — Al-Bahjah Harlah 2026
+   Styles specific to the Competitions page
+   ============================================================ */
+
+/* ============================================================
+   BACK BUTTON
+   ============================================================ */
+.back-btn {
+  position: fixed;
+  top: 28px;
+  left: 28px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-glass);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.back-btn:hover {
+  background: var(--accent);
+  color: var(--clr-green-900);
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(245, 200, 66, 0.35);
+  transform: translateX(-3px);
+}
+
+.back-btn i {
+  font-size: 1rem;
+  transition: transform var(--transition-fast);
+}
+
+.back-btn:hover i {
+  transform: translateX(-3px);
+}
+
+/* ============================================================
+   PAGE HERO / TITLE
+   ============================================================ */
+.page-hero {
+  min-height: 36vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 56px;
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 0%, rgba(45, 122, 82, 0.18) 0%, transparent 70%),
+              radial-gradient(ellipse at 10% 100%, rgba(245, 200, 66, 0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.page-hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clr-green-500);
+  background: rgba(45, 122, 82, 0.1);
+  padding: 5px 15px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(45, 122, 82, 0.2);
+  margin-bottom: 16px;
+}
+
+[data-theme="dark"] .page-hero-label {
+  color: var(--clr-yellow-300);
+  background: rgba(245, 200, 66, 0.1);
+  border-color: rgba(245, 200, 66, 0.2);
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.page-hero-title span {
+  color: var(--clr-yellow-400);
+}
+
+.page-hero-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--clr-yellow-400), transparent);
+  margin-top: 28px;
+  opacity: 0.4;
+}
+
+/* ============================================================
+   DESCRIPTION SECTION
+   ============================================================ */
+.desc-section {
+  padding: 72px 0;
+  background: var(--bg-secondary);
+}
+
+.desc-section p {
+  font-size: 0.975rem;
+  line-height: 1.95;
+  color: var(--text-secondary);
+  margin-bottom: 1.1rem;
+}
+
+.desc-section p:last-child {
+  margin-bottom: 0;
+}
+
+.desc-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--bg-card);
+  backdrop-filter: var(--blur-sm);
+  -webkit-backdrop-filter: var(--blur-sm);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-top: 32px;
+}
+
+.desc-highlight i {
+  color: var(--accent);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.desc-highlight p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   CATEGORY SECTION
+   ============================================================ */
+.category-section {
+  padding: 80px 0 100px;
+  background: var(--bg-primary);
+}
+
+.category-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.category-card {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.category-card-wrapper:hover .category-card {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.category-card-wrapper:hover .category-card img {
+  transform: scale(1.06);
+}
+
+.category-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 34, 24, 0.55) 0%,
+    transparent 50%
+  );
+  border-radius: var(--radius-xl);
+  transition: opacity var(--transition-base);
+}
+
+.category-card-wrapper:hover .category-card-overlay {
+  opacity: 0.7;
+}
+
+.category-card-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-green-900);
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.category-card-wrapper:hover .category-card-arrow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-label {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.category-sublabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+}
