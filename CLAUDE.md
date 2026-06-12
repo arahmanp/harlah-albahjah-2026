@@ -99,17 +99,7 @@ Navigasi halaman menggunakan `<a href="...">` biasa. Scroll-navigation dalam sat
 
 ## Daftar Cabang Lomba
 
-### SD IQU
-**Non-Akademik:** Futsal, Tenis meja, Tarik tambang, Lomba gado-gado, Panahan, Lomba kata semangat
-**Akademik:** Cerdas cermat, Pidato bahasa Arab, Pidato bahasa Inggris, Kaligrafi, Puisi, Hadroh, Adzan
-
-### SMP IQU
-**Non-Akademik:** Futsal, Voli, Basket, Tenis meja, Panahan, Tarik tambang, Lomba gado-gado, Lomba kata semangat
-**Akademik:** Cerdas cermat, MHQ (Musabaqah Hifzil Quran), Pidato Arab, Pidato Inggris, Ceramah, Adzan, Kaligrafi, Hadroh, Puisi
-
-### SMA IQU
-**Non-Akademik:** Futsal, Voli, Basket, Tenis meja, Panahan, Tarik tambang, Lomba gado-gado, Lomba kata semangat
-**Akademik:** Cerdas cermat, MHQ, Pidato Arab, Pidato Inggris, Ceramah, Adzan, Kaligrafi, Hadroh, Puisi
+Daftar Perlombaan ada pada file `competitions-list.md`
 
 ---
 
