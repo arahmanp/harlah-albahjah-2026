@@ -156,3 +156,53 @@
 .comp-col:nth-child(3) { animation-delay: 0.16s; }
 .comp-col:nth-child(4) { animation-delay: 0.24s; }
 .comp-col:nth-child(5) { animation-delay: 0.32s; }
+.comp-col:nth-child(6) { animation-delay: 0.40s; }
+.comp-col:nth-child(7) { animation-delay: 0.48s; }
+.comp-col:nth-child(8) { animation-delay: 0.56s; }
+.comp-col:nth-child(9) { animation-delay: 0.64s; }
+
+/* ============================================================
+   COMPETITION CATEGORY HEADER
+   ============================================================ */
+.comp-category {
+  margin-bottom: 60px;
+}
+
+.comp-category:last-child {
+  margin-bottom: 0;
+}
+
+.comp-category-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.comp-category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--clr-green-900);
+  color: var(--clr-yellow-300);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+[data-theme="dark"] .comp-category-tag {
+  background: rgba(245, 200, 66, 0.12);
+  border: 1px solid rgba(245, 200, 66, 0.28);
+  color: var(--clr-yellow-300);
+}
+
+.comp-category-divider {
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
