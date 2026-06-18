@@ -1,14 +1,20 @@
-﻿/* ============================================================
-   PUTRA.CSS — Al-Bahjah Harlah 2026
-   Styles specific to the Banin page
+/* ============================================================
+   BANIN.CSS — Al-Bahjah Harlah 2026
+   Styles specific to banin category & division pages
    ============================================================ */
 
-/* 3 cards layout — slightly smaller card size than competitions.html */
-.category-card {
+/* Category cards (Shigor / Kibar) — portrait ratio, medium size */
+.banin-category-card {
   aspect-ratio: 2/3;
 }
 
-/* Staggered fade-up delay for the 3 cards */
-.col-sm-8:nth-child(1) .fade-up { transition-delay: 0s; }
-.col-sm-8:nth-child(2) .fade-up { transition-delay: 0.1s; }
-.col-sm-8:nth-child(3) .fade-up { transition-delay: 0.2s; }
+/* Division cards (4 in Kibar) — slightly more compact */
+.banin-division-card {
+  aspect-ratio: 3/4;
+}
+
+/* Staggered fade-up delay for 2-card rows */
+.row > *:nth-child(1) .fade-up { transition-delay: 0s; }
+.row > *:nth-child(2) .fade-up { transition-delay: 0.1s; }
+.row > *:nth-child(3) .fade-up { transition-delay: 0.2s; }
+.row > *:nth-child(4) .fade-up { transition-delay: 0.3s; }
