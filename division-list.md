@@ -1,8 +1,9 @@
-1. Shigor
-   - SDIQu
-   - Tahfidz
-2. Kibar
-   - SMPIQu
-   - SMAIQu
-   - Tafaqquh
-   - STAIBA
+1. Banin
+   - Shigor
+    - SDIQu
+    - Tahfidz
+   - Kibar
+    - SMPIQu
+    - SMAIQu
+    - Tafaqquh
+    - STAIBA
