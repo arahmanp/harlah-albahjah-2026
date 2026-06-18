@@ -1,4 +1,4 @@
-# CLAUDE.md — Harlah Al-Bahjah 2026
+﻿# CLAUDE.md — Harlah Al-Bahjah 2026
 
 Panduan konteks untuk Claude Code. Baca file ini sebelum memulai pekerjaan apapun di proyek ini.
 
@@ -43,7 +43,7 @@ harlah-albahjah-2026/
 │   ├── index.css               ← Styling khusus halaman index
 │   ├── competitions.css        ← Styling halaman daftar kompetisi
 │   ├── division.css            ← Styling halaman pemilihan divisi
-│   └── putra.css               ← Styling minor tambahan
+│   └── banin.css               ← Styling minor tambahan
 │
 ├── js/
 │   └── index.js                ← Semua interaksi JS halaman index
@@ -65,8 +65,8 @@ harlah-albahjah-2026/
 │
 └── competitions/
     ├── competitions.html       ← Halaman index kompetisi
-    └── putra/
-        ├── putra.html          ← Pemilihan divisi santri putra
+    └── banin/
+        ├── banin.html          ← Pemilihan divisi santri banin
         ├── sdiqu/
         │   └── sdiqu.html      ← Cabang lomba SD IQU
         ├── smpiqu/
@@ -87,10 +87,10 @@ index.html
 
 competitions/competitions.html      ← Info umum kompetisi
 
-competitions/putra/putra.html       ← Pilih divisi (SD / SMP / SMA)
-competitions/putra/sdiqu/sdiqu.html     ← Lomba SD IQU
-competitions/putra/smpiqu/smpiqu.html   ← Lomba SMP IQU
-competitions/putra/smaiqu/smaiqu.html   ← Lomba SMA IQU
+competitions/banin/banin.html       ← Pilih divisi (SD / SMP / SMA)
+competitions/banin/sdiqu/sdiqu.html     ← Lomba SD IQU
+competitions/banin/smpiqu/smpiqu.html   ← Lomba SMP IQU
+competitions/banin/smaiqu/smaiqu.html   ← Lomba SMA IQU
 ```
 
 Navigasi halaman menggunakan `<a href="...">` biasa. Scroll-navigation dalam satu halaman menggunakan anchor `href="#section-id"` dengan smooth scroll dari jQuery.
@@ -215,7 +215,7 @@ Tidak ada API key atau autentikasi — semua link publik.
 1. **Tidak ada build process** — perubahan CSS/JS langsung terefleksi di browser (pakai live-server).
 2. **Library self-hosted** — Bootstrap & jQuery ada di `/lib/`, bukan CDN. Jaga konsistensi versi.
 3. **Tanggal event hardcoded** — `'2026-06-25T00:00:00'` ada di `js/index.js:106`. Update jika tanggal berubah.
-4. **Halaman kategori "Putri" belum ada** — saat ini baru ada `/putra/`. Halaman putri perlu dibuat dengan struktur yang sama.
+4. **Halaman kategori "Putri" belum ada** — saat ini baru ada `/banin/`. Halaman putri perlu dibuat dengan struktur yang sama.
 5. **Font Google dikomentari** — jika ingin mengaktifkan, uncomment di `css/global.css`.
 6. **README.md minimal** — file ini yang menjadi sumber kebenaran untuk struktur proyek.
 7. **Selalu buat checkpoint** — lakukan commit setiap kali membuat fitur/kode baru. pastikan buat commit message yang cukup deskriptif dalam bahasa inggris.
