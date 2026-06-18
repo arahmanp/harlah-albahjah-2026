@@ -1,111 +1,13 @@
-# SD
+- Lomba cerdas cermat
 
-- Non-akademik
-  
-  * Futsal
+- Pidato bahasa arab
 
-  * Tenis meja
+- Pidato bahasa inggris
 
-  * Tarik tambang
+- Kaligrafi
 
-  * Lomba gado-gado
+- Puisi
 
-  * Panahan
+- Hadroh
 
-  * Lomba kata semangat
-
-- Akademik
-  
-  * Lomba cerdas cermat
-
-  * Pidato bahasa arab
-
-  * Pidato bahasa inggris
-
-  * Kaligrafi
-
-  * Puisi
-
-  * Hadroh
-
-  * Adzan
-
-# SMP
-
-- Non-akademik
-  
-  * Futsal
-
-  * Volly
-
-  * Basket
-
-  * Tenis meja
-
-  * Panahan
-
-  * Tarik tambang
-
-  * Lomba gado-gado
-
-  * Lomba kata semangat
-
-- Akademik
-  
-  * Lomba cerdas cermat
-
-  * Musabaqah Hifzil Quran (MHQ)
-
-  * Pidato bahasa arab
-
-  * Pidato bahasa inggris
-
-  * Lomba ceramah
-
-  * Adzan
-
-  * Kaligrafi
-
-  * Hadroh
-
-  * Puisi
-
-# SMA
-
-- Non-akademik
-  
-  * Futsal
-
-  * Volly
-
-  * Basket
-
-  * Tenis meja
-
-  * Panahan
-
-  * Tarik tambang
-
-  * Lomba gado-gado
-
-  * Lomba kata semangat
-
-- Akademik
-  
-  * Lomba cerdas cermat
-
-  * Musabaqah Hifzil Quran (MHQ)
-
-  * Pidato bahasa arab
-
-  * Pidato bahasa inggris
-
-  * Lomba ceramah
-
-  * Adzan
-
-  * Kaligrafi
-
-  * Hadroh
-
-  * Puisi
+- Adzan
