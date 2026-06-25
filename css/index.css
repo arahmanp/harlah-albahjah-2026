@@ -417,13 +417,14 @@
 .event-card {
   overflow: hidden;
   cursor: pointer;
+  height: 100%;
 }
 
 .event-card-img-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/3;
 }
 
 .event-card-img-wrapper img {
